@@ -68,3 +68,7 @@ app.get('/api/search', (req, res) => {
 
 
 // res.json(location.location);
+
+app.all('*', (req, res) => {
+    res.send("OOPS! Thats a 404!");
+})

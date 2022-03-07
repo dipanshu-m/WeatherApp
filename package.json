@@ -1,11 +1,8 @@
 {
   "name": "weatherapp",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +11,15 @@
     "express": "^4.17.3"
   },
   "devDependencies": {
-    "nodemon":"^2.0.15"
-  }
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipanshu-m/WeatherApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dipanshu-m/WeatherApp/issues"
+  },
+  "homepage": "https://github.com/dipanshu-m/WeatherApp#readme",
+  "description": ""
 }
