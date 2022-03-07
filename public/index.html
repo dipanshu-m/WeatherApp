@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="icon" href="./res/icon-title.png" type="image/icon type">
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+
+<body>
+    <header>
+        <form action="/home" >
+            <a href="javascript:;" onclick="parentNode.submit()">
+                Home</a>
+        </form>
+        <form action="/api">
+            <a href="javascript:;" onclick="parentNode.submit()">
+                View Custom API</a>
+        </form>
+    </header>
+    <div class="container">
+        <video src="./res/background-index.mp4" type="video/mp4" muted loop autoplay></video>
+
+        <h1>Get Weather information <br> instantly!</h1>
+        <form action="/search" method="GET" class="searchbox">
+            <label for="search">Enter City Name </label>
+            <input type="text" autocomplete="false" name="q" class="form-input" />
+            <span class="form-alert"></span>
+            <button type="submit" class="submit-btn"><h2>Submit</h2></button>
+        </form>
+        <div id="notshowid">The names of the cities whose weather forecast is available are: </div>
+        <div class="alert notshow" id="error-search"></div>
+        <div class="result"></div>
+        <div class="result1" ></div>
+    </div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"></script>
+<script src="./index.js"></script>
+
+</html>
