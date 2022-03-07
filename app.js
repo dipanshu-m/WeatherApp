@@ -10,9 +10,11 @@ app.use(express.static('./public'));
 //parse form data
 app.use(express.urlencoded({ extended: false }))
 
-app.listen(5000, () => {
-    console.log("Server listening on port 5000");
-})
+const port = process.env.PORT || 5000;
+// ...
+app.listen(port, () => {
+  console.log(`Listening on http://localhost:${port}/`);
+});
 
 app.get('/', (req, res, next) => {
     res.status(200);
